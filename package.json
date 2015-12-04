@@ -1,0 +1,33 @@
+{
+  "name": "gulp-inspect",
+  "version": "0.0.0",
+  "description": "works with gulp, but does nothing. Use it to bootstrap your own gulp plugin with TypeScript, Travis and npm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "(cd ts/compile && node compile.js)",
+    "reinstall": "(rm -r node_modules && npm install)",
+    "release": "(npm test) && (git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
+    "startdev": "(git checkout master && git pull origin master)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushrocks/gulp-bootstrap.git"
+  },
+  "keywords": [
+    "virtual",
+    "alias"
+  ],
+  "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pushrocks/gulp-bootstrap/issues"
+  },
+  "homepage": "https://github.com/pushrocks/gulp-bootstrap",
+  "dependencies": {
+    "pushrocks": "^1.0.18"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-typescript": "2.9.2"
+  }
+}
