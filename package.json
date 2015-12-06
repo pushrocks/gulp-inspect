@@ -4,7 +4,7 @@
   "description": "works with gulp, but does nothing. Use it to bootstrap your own gulp plugin with TypeScript, Travis and npm.",
   "main": "index.js",
   "scripts": {
-    "test": "(cd ts/compile && node compile.js)",
+    "test": "(cd ts/compile && node compile.js) && (node test.js)",
     "reinstall": "(rm -r node_modules && npm install)",
     "release": "(npm test) && (git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
     "startdev": "(git checkout master && git pull origin master)"
@@ -24,10 +24,13 @@
   },
   "homepage": "https://github.com/pushrocks/gulp-bootstrap",
   "dependencies": {
-    "pushrocks": "^1.0.18"
+    "beautylog": "^1.0.6",
+    "gulp-wavethrough": "0.0.1",
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "3.9.0",
-    "gulp-typescript": "2.9.2"
+    "gulp-typescript": "2.9.2",
+    "pushrocks": "^1.0.23"
   }
 }

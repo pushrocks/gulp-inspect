@@ -1,5 +1,5 @@
-# gulp-bootstrap
-makes it easy to write placeholder markdown files with a link to the actual md file on the web.
+# gulp-inspect
+makes it easy to inspect gulp pipelines. Can be easily turned on and off.
 
 ### Buildstatus/Dependencies
 [![Build Status](https://travis-ci.org/pushrocks/gulp-bootstrap.svg?branch=master)](https://travis-ci.org/pushrocks/gulp-bootstrap)

@@ -1,10 +1,29 @@
 /// <reference path="typings/tsd.d.ts" />
-var through = require("through2");
-var path = require("path");
-module.exports = function (jadeTemplate, mojo) {
-    if (mojo === void 0) { mojo = undefined; }
-    return through.obj(function (file, enc, cb) {
-        //run callback function to signal end of plugin process.
-        return cb(null, file);
-    });
+var plugins = {
+    through: require("through2"),
+    path: require("path"),
+    beautylog: require("beautylog")("os"),
+    gulpWT: require("gulp-wavethrough")
+};
+var doNothing = function () {
+};
+module.exports = function (activateArg) {
+    if (activateArg === void 0) { activateArg = true; }
+    if (activateArg == true) {
+        return plugins.through.obj(function (file, enc, cb) {
+            plugins.beautylog.info("file in your pipeline:");
+            console.log("|| ".blue + String(file.contents));
+            console.log("|| ".blue + file.path);
+            console.log("|| ".blue + file.base);
+            console.log("|| ".blue + file.relative);
+            return cb(null, file); //run callback function to signal end of plugin process.
+        });
+    }
+    else if (activateArg == false) {
+        return plugins.gulpWT(); //wave through
+    }
+    else {
+        plugins.beautylog.error("gulp-inspect: please provide a valid boolean value as argument");
+        return plugins.gulpWT(); //wave through
+    }
 };

@@ -8,3 +8,6 @@ npm-debug.log
 
 ts/*.js
 ts/*.js.map
+
+#testing
+test/result/
