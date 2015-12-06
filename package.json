@@ -1,7 +1,7 @@
 {
   "name": "gulp-inspect",
   "version": "0.0.6",
-  "description": "works with gulp, but does nothing. Use it to bootstrap your own gulp plugin with TypeScript, Travis and npm.",
+  "description": "print to console what is in your gulp pipeline",
   "main": "index.js",
   "scripts": {
     "test": "(cd ts/compile && node compile.js) && (node test.js)",
