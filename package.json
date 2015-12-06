@@ -7,7 +7,8 @@
     "test": "(cd ts/compile && node compile.js) && (node test.js)",
     "reinstall": "(rm -r node_modules && npm install)",
     "release": "(npm test) && (git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
-    "startdev": "(git checkout master && git pull origin master)"
+    "update": "(git checkout master && git pull origin master && npm install)",
+    "upgrade": "(npm run update) && (ncu upgradeAll && npm install)"
   },
   "repository": {
     "type": "git",
