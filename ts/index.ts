@@ -18,7 +18,7 @@ module.exports = (activateArg:boolean = true) => {
             console.log("|| ".blue + "File.path: ".yellow + String(file.path).bold);
             console.log("|| ".blue + "File.base: ".yellow + String(file.base).bold);
             console.log("|| ".blue + "File.relative: ".yellow + String(file.relative).bold);
-            console.log("|| ".blue + "File.data: ".yellow + String(file.data).bold);
+            console.log("|| ".blue + "File.data: ".yellow + String(JSON.stringify(file.data)).bold);
             return cb(null, file); //run callback function to signal end of plugin process.
         });
     } else if (activateArg == false) {
