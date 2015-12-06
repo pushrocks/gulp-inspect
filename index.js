@@ -12,10 +12,11 @@ module.exports = function (activateArg) {
     if (activateArg == true) {
         return plugins.through.obj(function (file, enc, cb) {
             plugins.beautylog.info("file in your pipeline:");
-            console.log("|| ".blue + String(file.contents));
-            console.log("|| ".blue + file.path);
-            console.log("|| ".blue + file.base);
-            console.log("|| ".blue + file.relative);
+            console.log("|| ".blue + "File.contents: ".yellow + String(file.contents).bold);
+            console.log("|| ".blue + "File.path: ".yellow + String(file.path).bold);
+            console.log("|| ".blue + "File.base: ".yellow + String(file.base).bold);
+            console.log("|| ".blue + "File.relative: ".yellow + String(file.relative).bold);
+            console.log("|| ".blue + "File.data: ".yellow + String(file.data).bold);
             return cb(null, file); //run callback function to signal end of plugin process.
         });
     }
