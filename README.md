@@ -15,3 +15,6 @@ gulp.task("inspection",function(){
         .pipe(gulp.dest("./test/result/"));
 });
 ```
+
+The code above produces a console output like this:
+![console.png](https://mediaserve.lossless.digital/github.com/pushrocks/gulp-inspect/console.png)
