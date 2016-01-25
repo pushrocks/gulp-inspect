@@ -1,7 +1,7 @@
 /// <reference path="typings/tsd.d.ts" />
 var gulp = require("gulp");
 var plugins = {
-    beautylog: require("beautylog")("os"),
+    beautylog: require("beautylog"),
     gulpInspect: require("./index.js")
 };
 gulp.task("check1", function () {

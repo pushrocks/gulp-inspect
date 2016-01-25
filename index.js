@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 /// <reference path="typings/tsd.d.ts" />
 var plugins = {
     through: require("through2"),
     path: require("path"),
-    beautylog: require("beautylog")("os"),
+    beautylog: require("beautylog"),
     gulpWT: require("gulp-wavethrough")
 };
 var doNothing = function () {

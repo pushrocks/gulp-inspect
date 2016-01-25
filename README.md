@@ -18,3 +18,8 @@ gulp.task("inspection",function(){
 
 The code above produces a console output like this:
 ![console.png](https://mediaserve.lossless.digital/github.com/pushrocks/gulp-inspect/console.png)
+
+### About the authors:
+[![Project Phase](https://mediaserve.lossless.digital/lossless.de/img/createdby_github.svg)](https://lossless.com/)
+
+[![Support Us](https://img.shields.io/badge/Support%20us-PayPal-blue.svg)](https://paypal.me/lossless)

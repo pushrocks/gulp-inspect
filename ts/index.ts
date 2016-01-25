@@ -2,7 +2,7 @@
 var plugins = {
     through: require("through2"),
     path: require("path"),
-    beautylog: require("beautylog")("os"),
+    beautylog: require("beautylog"),
     gulpWT: require("gulp-wavethrough")
 }
 
