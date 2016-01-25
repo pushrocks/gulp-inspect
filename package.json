@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "npmts": "1.0.9"
+    "npmts": "1.0.10"
   }
 }
