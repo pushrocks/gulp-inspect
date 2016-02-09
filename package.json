@@ -1,6 +1,6 @@
 {
   "name": "gulp-inspect",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "print to console what is in your gulp pipeline",
   "main": "index.js",
   "scripts": {
