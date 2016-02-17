@@ -1,8 +1,8 @@
-/// <reference path="typings/tsd.d.ts" />
+/// <reference path="../ts/typings/main.d.ts" />
 var gulp = require("gulp");
 var plugins = {
     beautylog: require("beautylog"),
-    gulpInspect: require("../index.js")
+    gulpInspect: require("../dist/index.js")
 };
 
 gulp.task("check1",function(){

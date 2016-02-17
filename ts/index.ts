@@ -1,4 +1,4 @@
-/// <reference path="typings/tsd.d.ts" />
+/// <reference path="./typings/main.d.ts" />
 var plugins = {
     path: require("path"),
     beautylog: require("beautylog"),

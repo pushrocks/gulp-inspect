@@ -1,4 +1,4 @@
-/// <reference path="ts/typings/tsd.d.ts" />
+/// <reference path="typings/main.d.ts" />
 declare var plugins: {
     path: any;
     beautylog: any;

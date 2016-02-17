@@ -2,13 +2,9 @@
   "name": "gulp-inspect",
   "version": "1.0.6",
   "description": "print to console what is in your gulp pipeline",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "(npmts) && (node test.js)",
-    "reinstall": "(rm -r node_modules && npm install)",
-    "release": "(npm test) && (git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
-    "update": "(git checkout master && git pull origin master && npm install)",
-    "upgrade": "(npm run update) && (ncu upgradeAll && npm install)"
+    "test": "(npmts)"
   },
   "repository": {
     "type": "git",
@@ -26,13 +22,13 @@
   },
   "homepage": "https://github.com/pushrocks/gulp-inspect",
   "dependencies": {
-    "beautylog": "2.0.7",
-    "gulp-wavethrough": "0.0.2",
+    "beautylog": "2.1.1",
+    "gulp-wavethrough": "1.2.0",
     "indent-string": "^2.1.0",
     "through2": "2.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "npmts": "2.2.2"
+    "npmts": "3.0.1"
   }
 }

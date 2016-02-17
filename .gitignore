@@ -1,13 +1,14 @@
 node_modules/
 .settings/
 .idea/
-
+coverage/
 
 #npm devug
 npm-debug.log
 
 ts/*.js
 ts/*.js.map
+ts/typings/
 
 #testing
 test/result/
