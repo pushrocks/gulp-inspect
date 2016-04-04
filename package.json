@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/pushrocks/gulp-inspect",
   "dependencies": {
-    "beautylog": "2.1.1",
+    "beautylog": "4.1.1",
     "gulp-wavethrough": "1.2.0",
     "indent-string": "^2.1.0",
     "through2": "2.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "npmts": "^3.0.1"
+    "npmts": "^5.0.3"
   }
 }

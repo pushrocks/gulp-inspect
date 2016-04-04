@@ -2,6 +2,7 @@ node_modules/
 .settings/
 .idea/
 coverage/
+docs/
 
 #npm devug
 npm-debug.log
