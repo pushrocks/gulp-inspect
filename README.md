@@ -2,7 +2,8 @@
 makes it easy to inspect gulp pipelines. Can be easily turned on and off.
 
 ### Buildstatus/Dependencies
-[![Build Status](https://travis-ci.org/pushrocks/gulp-inspect.svg?branch=master)](https://travis-ci.org/pushrocks/gulp-inspect)
+[![build status](https://gitlab.com/pushrocks/gulp-inspect/badges/master/build.svg)](https://gitlab.com/pushrocks/gulp-inspect/commits/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/9paeg0ntjeop69hp/branch/master?svg=true)](https://ci.appveyor.com/project/philkunz/gulp-inspect/branch/master)
 [![Dependency Status](https://david-dm.org/pushrocks/gulp-inspect.svg)](https://david-dm.org/pushrocks/gulp-inspect)
 [![bitHound Dependencies](https://www.bithound.io/github/pushrocks/gulp-inspect/badges/dependencies.svg)](https://www.bithound.io/github/pushrocks/gulp-inspect/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/pushrocks/gulp-inspect/badges/code.svg)](https://www.bithound.io/github/pushrocks/gulp-inspect)

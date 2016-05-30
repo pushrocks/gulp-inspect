@@ -1,9 +1,10 @@
-/// <reference path="../ts/typings/main.d.ts" />
-var gulp = require("gulp");
+import "typings-test"
 var plugins = {
     beautylog: require("beautylog"),
     gulpInspect: require("../dist/index.js")
 };
+
+let gulp = require("gulp");
 
 gulp.task("check1",function(){
     gulp.src("./test/test.md")

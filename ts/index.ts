@@ -1,4 +1,4 @@
-/// <reference path="./typings/main.d.ts" />
+import "typings-global"
 var plugins = {
     path: require("path"),
     beautylog: require("beautylog"),

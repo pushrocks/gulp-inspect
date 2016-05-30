@@ -3,12 +3,13 @@
   "version": "1.0.9",
   "description": "print to console what is in your gulp pipeline",
   "main": "dist/index.js",
+  "typings":"dist/index.d.ts",
   "scripts": {
     "test": "(npmts)"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pushrocks/gulp-inspect.git"
+    "url": "https://gitlab.com/pushrocks/gulp-inspect.git"
   },
   "keywords": [
     "gulpplugin",
@@ -18,17 +19,19 @@
   "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pushrocks/gulp-inspect/issues"
+    "url": "https://gitlab.com/pushrocks/gulp-inspect/issues"
   },
-  "homepage": "https://github.com/pushrocks/gulp-inspect",
+  "homepage": "https://gitlab.com/pushrocks/gulp-inspect",
   "dependencies": {
-    "beautylog": "4.1.2",
-    "gulp-wavethrough": "1.2.0",
+    "beautylog": "5.0.8",
+    "gulp-wavethrough": "1.2.1",
     "indent-string": "^2.1.0",
-    "through2": "2.0.1"
+    "through2": "2.0.1",
+    "typings-global": "^1.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "npmts": "^5.0.3"
+    "npmts": "^5.1.19",
+    "typings-test": "^1.0.1"
   }
 }
